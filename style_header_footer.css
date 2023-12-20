@@ -1,0 +1,27 @@
+body{
+    display: grid;
+    grid-template-rows: 100px auto 100px;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    'header header header header header header header header'
+    'main main main main main main main main'
+    'footer footer footer footer footer footer footer footer';
+    background-color: chocolate;
+    gap: 10px;
+}
+
+header{
+    grid-area: header;
+    background-color: aqua;
+}
+
+main{
+    grid-area: main;
+    background-color: blue;
+}
+
+footer{
+    grid-area: footer;
+    background-color: blueviolet;
+}
+
