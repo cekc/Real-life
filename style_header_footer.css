@@ -2,25 +2,16 @@
     box-sizing: border-box;
     margin: 0;
 }
-
 body{
     display: grid;
     grid-template-rows: 100px auto 100px;
     grid-template-columns: auto;
     grid-template-areas: 
-    'header header header header'
-    'main main main main'
-    'footer footer footer footer';
+    'header header header header header header header header'
+    'main main main main main main main main'
+    'footer footer footer footer footer footer footer footer';
     background-color: chocolate;
     gap: 10px;
-}
-
-h1{
-    font-family: 'Square Peg';
-}
-
-h2{
-    font-family: 'Kulim park';
 }
 
 header{
@@ -41,7 +32,6 @@ main{
     grid-area: main;
     background-color: blue;
 }
-
 
 footer{
     grid-area: footer;
