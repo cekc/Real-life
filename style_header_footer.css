@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
 body{
     display: grid;
     grid-template-rows: 100px auto 100px;
@@ -12,7 +16,17 @@ body{
 
 header{
     grid-area: header;
-    background-color: aqua;
+    background-color: #6B722F;
+    height: 153px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    text-decoration: none;
+    color: white;
+    font-family: ;
 }
 
 main{
