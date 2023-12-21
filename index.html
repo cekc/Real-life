@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--stylesheet ændres således at vi kun har to: en til mobil og en til laptop-->
     <link rel="stylesheet" href="style_header_footer.css">
     <link rel="stylesheet" href="style_mobil.css">
     <link rel="stylesheet" href="style_laptop.css">
+
+    <!--import af burger ikon-->
     <script src="https://kit.fontawesome.com/158830f7f7.js" crossorigin="anonymous"></script>
+
+    <!--import af square peg-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kulim+Park:wght@200;400&family=Square+Peg&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Square+Peg">
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Kulim+Park">
+    <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+
+    <!--import af kulim park-->
+    <link href="https://fonts.googleapis.com/css2?family=Kulim+Park:wght@200;400&family=Square+Peg&display=swap" rel="stylesheet">
+
+   <!--import af javascript funktionalitet-->
     <script src="dropdown.js"></script>
-    <title>Verninge og Omegn</title>
+
+    <title>Verninge og omegn</title>
+
 </head>
 <body>
     <header>       
@@ -27,31 +35,29 @@
         </a>
 
         <!-- Burger menu Mobil-->
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="#">Forside</a>
-              <a href="#">Verninge og Omegn</a>
-              <a href="#">Kalender</a>
-              <a href="#">Verninge Borgerforening</a>
-              <a href="#">Kontakt</a>
-            </div>
-          </div>
-
-        <!-- Menu desktop -->
         <nav>
-            <ul>
-                <li><a href="#">Forside</a></li>
-                <li><a href="#">Verninge og Omegn</a></li>
-                <li><a href="#">Kalender</a></li>
-                <li><a href="#">Verninge Borgerforegning</a></li>
-                <li><a href="#">Kontakt</a></li>
-            </ul>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                <a href="#">Forside</a>
+                <a href="#">Verninge og Omegn</a>
+                <a href="#">Kalender</a>
+                <a href="#">Verninge Borgerforening</a>
+                <a href="#">Kontakt</a>
+                </div>
+            </div>
         </nav>
+        
     </header>
 
     <main>
-        
+
+        <section class="bg-white-font-black" id="sec-welcome">
+            <video src="https://www.youtube.com/watch?v=_2RNqzVXxBI"></video>
+            <h1>Velkommen til Verninge og omegn</h1>
+            <h2>I Verninge skaber fællesskabet gode forudsætninger for børnenes trivsel</h2>
+            <p>Et stærkt lokalsamfund som i Verninge er afgørende for børns trivsel og udvikling, styrket gennem positiv social interaktion. Nære bånd med naboer og lokalsamfund skaber en tryg atmosfære, afgørende for børns mentale velbefindende. Dette gode fællesskab fremmer vigtige sociale færdigheder som empati og samarbejde. Verninge's lokalsamfund er også en kilde til læring om kulturelle værdier og traditioner, hvilket udvikler respekt for forskellige perspektiver. Samlet set udgør Verninge's fællesskab en berigende ramme, hvor børn kan vokse, lære og opleve glæden ved at være en del af noget større end dem selv.</p>
+        </section>
     
     </main>
 

@@ -2,9 +2,10 @@
     box-sizing: border-box;
     margin: 0;
 }
+
 body{
     display: grid;
-    grid-template-rows: auto 100px 100px;
+    grid-template-rows: auto auto 100px;
     grid-template-columns: auto;
     grid-template-areas: 
     'header header header header header header header header'
@@ -13,49 +14,58 @@ body{
     background-color: chocolate;
 }
 
+h1{
+    font-family: 'square peg';
+    font-size: 4em;
+    font-weight: lighter;
+}
+
+h2{
+    font-family: 'kulim park';
+    font-weight: lighter;
+}
+
+p{
+    font-family: 'kulim park';
+}
+
+/*section classes*/
+.bg-white-font-black{
+    background-color: #FBFBFB;
+    color: black;
+}
+
+.bg-white-font-black h1{
+    color: #434910;
+
+}
+
+/*header*/
 header{
     grid-area: header;
     background-color: #6B722F;
-    height: 153px;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-}
-header nav{
-    display: none;
-}
-
-main{
-    grid-area: main;
-    background-color: blue;
-}
-
-footer{
-    grid-area: footer;
-    background-color: aqua;
 }
 
 /* dropdown menu */
 /* Dropdown Button */
 .dropbtn {
     background-color: #6B722F;
-    color: white;
-    font-size: 3em;
+    color: #FBFBFB;
+    font-size: 4em;
     border: none;
     cursor: pointer;
   }
 
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    float: right;
-    position: relative;
-    display: inline-block;
-  }
+/*The container <div> - needed to position the dropdown content
+.dropdown{
+}*/
   
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #6B722F;
@@ -64,21 +74,50 @@ footer{
     right: 0;
     z-index: 1;
     overflow: visible;
-  }
+}
   
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: white;
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #FBFBFB;
     padding: 30px 45px;
     text-decoration: none;
     display: block;
     font-size: x-large;
     font-family: 'Kulim Park';
     font-weight: bold;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #5a5f2a;}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
+}
+   
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+main{
+    grid-area: main;
+}
+
+#sec-welcome{
+    text-align: center;
+}
+
+#sec-welcome video{
+    height: 360px;
+    width: 400px;
+}
+
+#sec-welcome h1{
+    padding: 20px;  
+}
+
+#sec-welcome h2{
+    padding: 20px;
+}
+
+#sec-welcome p{
+    padding: 20px;
+}
+
+footer{
+    grid-area: footer;
+    background-color: aqua;
+}
+
+
