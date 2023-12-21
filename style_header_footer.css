@@ -11,7 +11,6 @@ body{
     'header header header header header header header header'
     'main main main main main main main main'
     'footer footer footer footer footer footer footer footer';
-    background-color: chocolate;
 }
 
 h1{
@@ -22,11 +21,12 @@ h1{
 
 h2{
     font-family: 'kulim park';
-    font-weight: lighter;
 }
 
 p{
     font-family: 'kulim park';
+    font-weight: lighter;
+    font-size: 1.3em;
 }
 
 /*section classes*/
@@ -39,6 +39,12 @@ p{
     color: #434910;
 
 }
+
+.bg-green-font-white{
+    background-color: #6B722F;
+    color: #FBFBFB;
+}
+
 
 /*header*/
 header{
@@ -96,6 +102,7 @@ main{
 
 #sec-welcome{
     text-align: center;
+    padding-bottom: 40px;
 }
 
 #sec-welcome video{
@@ -112,6 +119,34 @@ main{
 }
 
 #sec-welcome p{
+    padding: 20px;
+}
+
+#sec-discover{
+    text-align: center;
+}
+#sec-discover h1{
+    padding: 20px;
+}
+#sec-discover img{
+    border-radius: 20px;
+    width: 80%;
+    height: auto;
+}
+#sec-discover h2{
+    padding-bottom: 40px;
+}
+#sec-reasons{
+    text-align: center;
+    padding-bottom: 40px;
+}
+#sec-reasons h1{
+    padding: 20px;
+}
+#sec-reasons img{
+    border-radius: 20px;
+}
+#sec-reasons p{
     padding: 20px;
 }
 
