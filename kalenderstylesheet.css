@@ -7,128 +7,127 @@
     
 }
 body {
-    background: #6b722F;
+    background: #fbfbfb;
 }
 
 .overskrift {
-    display: grid;
-    justify-items: center;
-
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5rem;
 }
-.overskrift h1{
+.pg-title-blomst{
+    height: 3rem;
+    width: auto;
+    margin: 2rem 2rem 2rem 2rem;
+}
+
+h1{
     font-family: 'square peg';
-    color: #fbfbfb;
+    color: #6b722F;
     font-size: 5rem;
     font-weight: 500;
 }
 
 h2 {
     font-family: 'square peg';
+    font-weight: 400;
+    font-size: 2.5rem;
     text-align: center;
-    margin: 10px;
+    margin: 0.8rem;
 }
 
 h3 {
     font-family: 'kulim park';
+    font-weight: 400;
+    margin: 0.8rem;
 }
 
 
 h4 {
     font-family: 'kulim park';
+    font-weight: 400;
     text-align: left;
+    margin: 0.8rem;
+}
+
+h5{
+    font-family: 'kulim park';
+    font-weight: 300;
+    text-align: left;
+    margin-left: 0.8rem;
 }
 
 p {
     font-family: 'kulim park';
+    font-weight: 300;
+    padding:0.4rem 1rem 0.4rem 1rem;
 }
 
 
 .card-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    max-width: 1250px;
-    margin: 150px auto;
-    padding: 20px;
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
+    padding: 20px;
 }
 
-
-
+.row-span-2{
+    grid-row: span 2;
+}
 
 .card-list .card-item {
     background: #fbfbfb;
-    padding: 26px;
     border-radius: 8px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
     list-style: none;
-    cursor: pointer;
     text-decoration: none;
-    border: 2px solid transparent;
+    border: 2px solid #6b722F;
     transition: border 0.5s ease;
 }
 
-
-
-.card-list .card-item:hover {
-    border: 2px solid #6b722F;
+.card-title{
+    background-color: #6b722F;
+    color: #fbfbfb;
+    padding: 0.5em;
 }
-.card-list .card-item img {
-    width: 100%;
-    aspect-ratio: 16/9;
+
+.card-content{
+    padding: 0.5em;
+}
+
+a{
+    text-decoration: none;
+    color: #6b722F;
+}
+
+.link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.card-item img{
+    max-width: 100%;
+    border-radius: 0 0 8px 8px;
+}
+
+.card-afholdte-events{
+    background-color: #6b722F;
+    color: #fbfbfb;
     border-radius: 8px;
-    object-fit: cover;
 }
-.card-list span {
-    display: inline-block;
-    background: #F7DFF5;
-    margin-top: 32px;
-    padding: 8px 15px;
-    font-size: 0.75rem;
-    border-radius: 50px;
-    font-weight: 600;
+.blomst-lille{
+    height: 2rem;
+    width: auto;
+    margin: 0 1.5rem 0 1.5rem;
 }
-.card-list .julefrokost {
-    background-color: #F7DFF5; 
-    color: #B22485;
-}   
-.card-list .nytaar {
-    background-color: #d1e8ff;
-    color: #2968a8;
-}
-.card-list .keramik {
-    background-color: #d6f8d6; 
-    color: #205c20;
-}
-.card-item h3 {
-    color: #000;
-    font-size: 1.438rem;
-    margin-top: 28px;
-    font-weight: 600;
-}
-.card-item .arrow {
+.title-afholdte-events{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    transform: rotate(-35deg);
-    height: 40px;
-    width: 40px;
-    color: #26220b;
-    border: 1px solid #26220b ;
-    border-radius: 50%;
-    margin-top: 40px;
-    transition: 0.2s ease;
 }
-.card-list .card-item:hover .arrow  {
-    background: #6b722F;
-    color: #fff; 
-}
-@media (max-width: 1200px) {
-    .card-list .card-item {
-        padding: 15px;
-    }
-}
-@media screen and (max-width: 980px) {
-    .card-list {
-        margin: 0 auto;
-    }
+
+.title-afholdte-events h3{
+    margin:0.5 0 0.4 0.8!important;
 }
