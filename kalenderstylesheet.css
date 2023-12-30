@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Square+Peg:regular);
+@import url(https://fonts.googleapis.com/css?family=Kulim+Park:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background: #fbfbfb;
+}
+
+.overskrift {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5rem;
+}
+.pg-title-blomst{
+    height: 3rem;
+    width: auto;
+    margin: 2rem 2rem 2rem 2rem;
+}
+
+h1{
+    font-family: 'square peg';
+    color: #6b722F;
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: 'square peg';
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0.8rem;
+}
+
+h3 {
+    font-family: 'kulim park';
+    font-weight: 400;
+    margin: 0.8rem;
+}
+
+
+h4 {
+    font-family: 'kulim park';
+    font-weight: 400;
+    text-align: left;
+    margin: 0.8rem;
+}
+
+h5{
+    font-family: 'kulim park';
+    font-weight: 300;
+    text-align: left;
+    margin-left: 0.8rem;
+}
+
+p {
+    font-family: 'kulim park';
+    font-weight: 300;
+    padding:0.4rem 1rem 0.4rem 1rem;
+}
+
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.row-span-2{
+    grid-row: span 2;
+}
+
+.card-list .card-item {
+    background: #fbfbfb;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    text-decoration: none;
+    border: 2px solid #6b722F;
+    transition: border 0.5s ease;
+}
+
+.card-title{
+    background-color: #6b722F;
+    color: #fbfbfb;
+    padding: 0.5em;
+}
+
+.card-content{
+    padding: 0.5em;
+}
+
+a{
+    text-decoration: none;
+    color: #6b722F;
+}
+
+.link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.card-item img{
+    max-width: 100%;
+    border-radius: 0 0 8px 8px;
+}
+
+.card-afholdte-events{
+    background-color: #6b722F;
+    color: #fbfbfb;
+    border-radius: 8px;
+}
+.blomst-lille{
+    height: 2rem;
+    width: auto;
+    margin: 0 1.5rem 0 1.5rem;
+}
+.title-afholdte-events{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-afholdte-events h3{
+    margin:0.5 0 0.4 0.8!important;
+}
