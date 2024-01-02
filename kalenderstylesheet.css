@@ -135,12 +135,24 @@ p {
 
 a{
     text-decoration: none;
-    color: #6b722F;
 }
 
 .link:hover{
     cursor: pointer;
     text-decoration: underline;
+}
+
+.link-hvid {
+    color: #fbfbfb !important;
+}
+
+.link-hvid:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.link {
+    color: #6b722F;
 }
 
 .card-item img{
