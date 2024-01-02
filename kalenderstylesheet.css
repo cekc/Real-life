@@ -126,6 +126,7 @@ p {
     background-color: #6b722F;
     color: #fbfbfb;
     padding: 0.5em;
+    height: 7rem;
 }
 
 .card-content{
@@ -171,7 +172,7 @@ a{
 }
 .title-afholdte-events{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
