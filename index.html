@@ -29,94 +29,99 @@
 </head>
 <body>
 
-    <header>       
-        <!-- logo -->
-        <a class="logo" href="index.html">
-            <img src="grafik/logo_mobil.png" alt="Verninge og Omegn logo">
-        </a>
 
-        <!-- Burger menu Mobil-->
-        <nav>
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
-                <div id="myDropdown" class="dropdown-content">
-                <a href="index.html">Forside</a>
-                <a href="verninge_og_omegn.html">Verninge og Omegn</a>
-                <a href="#">Kalender</a>
-                <a href="#">Verninge Borgerforening</a>
-                <a href="#">Kontakt</a>
+    <div class="grid-col-4">
+        <header>       
+            <!-- logo -->
+            <a class="logo" href="index.html">
+                <img src="grafik/logo_mobil.png" alt="Verninge og Omegn logo">
+            </a>
+
+            <!-- Burger menu Mobil-->
+            <nav>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+                    <div id="myDropdown" class="dropdown-content">
+                    <a href="index.html">Forside</a>
+                    <a href="verninge_og_omegn.html">Verninge og Omegn</a>
+                    <a href="#">Kalender</a>
+                    <a href="#">Verninge Borgerforening</a>
+                    <a href="#">Kontakt</a>
+                    </div>
+
                 </div>
-            </div>
-        </nav>
+            </nav>
+            
+        </header>
+
+        <main>
+            <!-- velkommen section-->
+            <section class="bg-white-font-black" id="sec-welcome">
+                <video src="https://www.youtube.com/watch?v=_2RNqzVXxBI" poster="Img/welcome_video_mobil.png"></video>
+                <h1>Velkommen til Verninge og omegn</h1>
+                <h2>I Verninge skaber fællesskabet gode forudsætninger for børnenes trivsel</h2>
+                <p>Et stærkt lokalsamfund som i Verninge er afgørende for børns trivsel og udvikling, styrket gennem positiv social interaktion. Nære bånd med naboer og lokalsamfund skaber en tryg atmosfære, afgørende for børns mentale velbefindende. Dette gode fællesskab fremmer vigtige sociale færdigheder som empati og samarbejde. Verninge's lokalsamfund er også en kilde til læring om kulturelle værdier og traditioner, hvilket udvikler respekt for forskellige perspektiver. Samlet set udgør Verninge's fællesskab en berigende ramme, hvor børn kan vokse, lære og opleve glæden ved at være en del af noget større end dem selv.</p>
+            </section>
+
+            <!--gå på opdagelse section-->
+            <section class="bg-green-font-white" id="sec-discover">
+                <h1>Gå på opdagelse i Verninge og omegn</h1>
+                <a href="#"><img class="discover-img" src="Img/dicover-verninge.png" alt="oversikt over Verninge"></a>
+                <h2>Verninge og omegn</h2>
+                <a href="#"><img class="discover-img" src="Img/discover-calender.png" alt="se kommende events"></a>
+                <h2>Kalender</h2>
+                <a href="#"><img class="discover-img" src="Img/discover-union.png" alt="Bestyrelsen Praktisk information Sponsorater Bliv frivillig"></a>
+                <h2>Om borgerforeningen</h2>
+                <a href="#"><img class="discover-img" src="Img/discover-contakt.png" alt="Find vej Kontakt bestyrelsen Foreninger Dagtilbud/Skoler"></a>
+                <h2>Kontakt</h2>
+            </section>
+
+            <!--grunde til ... section-->
+            <section class="bg-white-font-black" id="sec-reasons">
+                <h1>5 gode grunde til at flytte til Verninge</h1>
+                <h2>1. Smuk natur med kort afstand til Odense</h2>
+                <p>Verninge ligger i bekvem nærhed til Odense, hvilket gør det nemt at nyde byens faciliteter, kulturtilbud og indkøbsmuligheder på blot en kort køretur.</p>
+                <img src="Img/reasons-kort.png" alt="kort">
+                <h2>2. Overkommelige boligpriser</h2>
+                <p>Verninge tilbyder overkommelige boligpriser og ledige byggegrunde, hvilket gør det lettere for familier at finde et hjem, der passer til deres behov og budget.</p>
+                <img src="Img/reasons-solgt.png" alt="solgt">
+                <h2>3. Nærliggende skolemuligheder og gode dagtilbud</h2>
+                <p>Verninge har adgang til lokale skoler, herunder Verninge skole, der giver børnene en nærliggende og kvalitetsorienteret uddannelsesmulighed. Yderligere uddannelsesmuligheder som Vestfyns Gymnasium styrker områdets uddannelsesprofil.</p>
+                <img src="Img/reasons-skole.png" alt="skole">
+                <h2>4. Trygt fællesskab og aktivt foreningsliv.</h2>
+                <p>I Verninge oplever du et varmt og trygt fællesskab, hvor naboer og lokale kender hinanden. Det sociale bånd styrker trivslen og skaber en følelse af samhørighed og gensidig støtte</p>
+                <img src="Img/reasons-famile.png" alt="familie">
+                <h2>5. God offentlig transport</h2>
+                <p>Med gode busforbindelser til Assens, Odense og omkringliggende byer er Verninge godt forbundet, hvilket gør det nemt at komme rundt i regionen</p>
+                <img src="Img/reasons-bus.png" alt="bus">
+            </section>
         
-    </header>
+        </main>
 
-    <main>
-        <!-- velkommen section-->
-        <section class="bg-white-font-black" id="sec-welcome">
-            <video src="https://www.youtube.com/watch?v=_2RNqzVXxBI" poster="Img/welcome_video_mobil.png"></video>
-            <h1>Velkommen til Verninge og omegn</h1>
-            <h2>I Verninge skaber fællesskabet gode forudsætninger for børnenes trivsel</h2>
-            <p>Et stærkt lokalsamfund som i Verninge er afgørende for børns trivsel og udvikling, styrket gennem positiv social interaktion. Nære bånd med naboer og lokalsamfund skaber en tryg atmosfære, afgørende for børns mentale velbefindende. Dette gode fællesskab fremmer vigtige sociale færdigheder som empati og samarbejde. Verninge's lokalsamfund er også en kilde til læring om kulturelle værdier og traditioner, hvilket udvikler respekt for forskellige perspektiver. Samlet set udgør Verninge's fællesskab en berigende ramme, hvor børn kan vokse, lære og opleve glæden ved at være en del af noget større end dem selv.</p>
-        </section>
+        <footer>
 
-        <!--gå på opdagelse section-->
-        <section class="bg-green-font-white" id="sec-discover">
-            <h1>Gå på opdagelse i Verninge og omegn</h1>
-            <a href="#"><img class="discover-img" src="Img/dicover-verninge.png" alt="oversikt over Verninge"></a>
-            <h2>Verninge og omegn</h2>
-            <a href="#"><img class="discover-img" src="Img/discover-calender.png" alt="se kommende events"></a>
-            <h2>Kalender</h2>
-            <a href="#"><img class="discover-img" src="Img/discover-union.png" alt="Bestyrelsen Praktisk information Sponsorater Bliv frivillig"></a>
-            <h2>Om borgerforeningen</h2>
-            <a href="#"><img class="discover-img" src="Img/discover-contakt.png" alt="Find vej Kontakt bestyrelsen Foreninger Dagtilbud/Skoler"></a>
-            <h2>Kontakt</h2>
-        </section>
+            <div class="bg-green-font-white">
+                <h1>Kontakt os</h1>
+                    
+                <ul>
+                    <li><a href="#"><i class="fa-regular fa-envelope"></i> formand@verninge.dk</a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i> 29 90 43 87</a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i> Find os på Facebook</a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i> Find os på Instagram</a></li>
+                </ul>
 
-        <!--grunde til ... section-->
-        <section class="bg-white-font-black" id="sec-reasons">
-            <h1>5 gode grunde til at flytte til Verninge</h1>
-            <h2>1. Smuk natur med kort afstand til Odense</h2>
-            <p>Verninge ligger i bekvem nærhed til Odense, hvilket gør det nemt at nyde byens faciliteter, kulturtilbud og indkøbsmuligheder på blot en kort køretur.</p>
-            <img src="Img/reasons-kort.png" alt="kort">
-            <h2>2. Overkommelige boligpriser</h2>
-            <p>Verninge tilbyder overkommelige boligpriser og ledige byggegrunde, hvilket gør det lettere for familier at finde et hjem, der passer til deres behov og budget.</p>
-            <img src="Img/reasons-solgt.png" alt="solgt">
-            <h2>3. Nærliggende skolemuligheder og gode dagtilbud</h2>
-            <p>Verninge har adgang til lokale skoler, herunder Verninge skole, der giver børnene en nærliggende og kvalitetsorienteret uddannelsesmulighed. Yderligere uddannelsesmuligheder som Vestfyns Gymnasium styrker områdets uddannelsesprofil.</p>
-            <img src="Img/reasons-skole.png" alt="skole">
-            <h2>4. Trygt fællesskab og aktivt foreningsliv.</h2>
-            <p>I Verninge oplever du et varmt og trygt fællesskab, hvor naboer og lokale kender hinanden. Det sociale bånd styrker trivslen og skaber en følelse af samhørighed og gensidig støtte</p>
-            <img src="Img/reasons-famile.png" alt="familie">
-            <h2>5. God offentlig transport</h2>
-            <p>Med gode busforbindelser til Assens, Odense og omkringliggende byer er Verninge godt forbundet, hvilket gør det nemt at komme rundt i regionen</p>
-            <img src="Img/reasons-bus.png" alt="bus">
-        </section>
-    
-    </main>
-
-    <footer>
-
-        <div class="bg-green-font-white">
-            <h1>Kontakt os</h1>
-                
-            <ul>
-                <li><a href="#"><i class="fa-regular fa-envelope"></i> formand@verninge.dk</a></li>
-                <li><a href="#"><i class="fa-solid fa-phone"></i> 29 90 43 87</a></li>
-                <li><a href="#"><i class="fa-brands fa-facebook"></i> Find os på Facebook</a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i> Find os på Instagram</a></li>
-            </ul>
-
-            <h1>Tak til vores samarbejdspartnere</h1>
+                <h1>Tak til vores samarbejdspartnere</h1>
 
 
-            <img src="Img/img-sponser.png" alt="">
-            <img src="Img/img-sponser.png" alt="">
-            <img src="Img/img-sponser.png" alt="">
-            <img src="Img/img-sponser.png" alt="">
-        </div>
+                <img src="Img/img-sponser.png" alt="">
+                <img src="Img/img-sponser.png" alt="">
+                <img src="Img/img-sponser.png" alt="">
+                <img src="Img/img-sponser.png" alt="">
+            </div>
 
-    </footer>
+        </footer>
+
+    </div>
 
 </body>
 </html>
