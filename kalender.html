@@ -5,9 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verninge og omegn kalender</title>
     <link rel="stylesheet" href="kalenderstylesheet.css">
+   <!--<link rel="stylesheet" href="style_header_footer.css">-->
 </head>
 
 <body>
+    <header>       
+        <!-- logo -->
+        <a class="logo" href="index.html">
+            <img src="grafik/logo_mobil.png" alt="Verninge og Omegn logo">
+        </a>
+
+        <!-- Burger menu Mobil-->
+        <nav>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                <a href="index.html">Forside</a>
+                <a href="verninge_og_omegn.html">Verninge og Omegn</a>
+                <a href="kalender.html">Kalender</a>
+                <a href="#">Verninge Borgerforening</a>
+                <a href="#">Kontakt</a>
+                </div>
+            </div>
+        </nav>
+        
+    </header>
     <div class="overskrift">
         <img src="blomst.png" class="pg-title-blomst" alt="verninge blomst logo">
         <h1>Kalender</h1>
@@ -194,5 +216,22 @@
         
 
     </section>
+    <footer>
+        <div class="bg-green-font-white">
+            <h1>Kontakt os</h1> 
+                <ul>
+                    <li><a href="#"><i class="fa-regular fa-envelope"></i> formand@verninge.dk</a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i> 29 90 43 87</a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i> Find os på Facebook</a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i> Find os på Instagram</a></li>
+                </ul>
+            <h1>Tak til vores samarbejdspartnere</h1>
+            <img src="Img/img-sponser.png" alt="">
+            <img src="Img/img-sponser.png" alt="">
+            <img src="Img/img-sponser.png" alt="">
+            <img src="Img/img-sponser.png" alt="">
+        </div>
+    </footer>
 </body>
+
 </html>
