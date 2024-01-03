@@ -186,11 +186,10 @@ footer img{
     .dropdown a{
         color: #FBFBFB;
         padding: 30px 45px;
-        text-decoration: none;
+        text-decoration: ;
         display: inline;
         font-size: x-large;
-        font-family: 'Kulim Park';
-        font-weight: bold;
+   
     }
 }
 
