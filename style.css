@@ -1,7 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Square+Peg:regular);
 @import url(https://fonts.googleapis.com/css?family=Kulim+Park:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic);
 
-/*mobil*/
+/*--------------------------------------------Generel styling, Header + Footer--------------------------*/
+/*Brandon, Hans Peder */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -11,17 +12,10 @@ html{
     width: 100%;
 }
 
-.grid-col-4{
-    width: 100%;
-    display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: auto auto auto;
-    grid-template-areas: 
-    'header header header header'
-    'main main main main'
-    'footer footer footer footer';
-}
-
+/*.span-4{
+    column-span: 4;
+}*/
+/*Amanda*/
 h1{
     font-family: 'square peg';
     color: #6b722F;
@@ -48,7 +42,6 @@ h3 {
     margin: 0.8rem;
 }
 
-
 h4 {
     font-family: 'kulim park';
     font-weight: 400;
@@ -69,7 +62,26 @@ p {
     padding:0.4rem 1rem 0.4rem 1rem;
 }
 
-/*section classes*/
+.pg-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.pg-title-blomst{
+    height: 3rem;
+    width: auto;
+    margin: 2rem 2rem 2rem 2rem;
+}
+@media (max-width:63rem){
+    .pg-title-blomst{
+        display: none;
+    }
+}
+/*--------------section classes-----------------
+Brandon og Hans Peder*/
 .bg-white-font-black{
     background-color: #FBFBFB;
     color: black;
@@ -86,7 +98,8 @@ p {
 }
 
 
-/*--------header---------*/
+/*---------------------header---------------------
+Amanda, Brandon og Hans-Peder*/
 header{
     grid-area: header;
     position: sticky;
@@ -95,7 +108,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 1.1rem;
     z-index: 1;
 }
 
@@ -139,7 +152,7 @@ header{
 .logo{
     height: 4.7rem;
     width: 5rem;
-    background-image: url(Grafik/logo_mobil.png);
+    background-image: url(grafik/logo_mobil.png);
     z-index: 20!important;
 }
 }
@@ -164,7 +177,7 @@ header{
     .logo{
         height: 5rem;
         width: 15rem;
-        background-image: url(Grafik/logo-desktop-lille.png);
+        background-image: url(grafik/logo-desktop-lille.png);
         background-position: 0;
         background-repeat: no-repeat;
         z-index: 20!important;
@@ -189,7 +202,6 @@ header{
     color: #f7bf58!important;
 }
    
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
 /*main*/
@@ -197,7 +209,8 @@ main{
     grid-area: main;
 }
 
-/*footer*/
+/*--------------footer----------------
+Brandon, Hans Peder*/
 footer{
     grid-area: footer;
     background-color: #6B722F;
@@ -240,5 +253,328 @@ footer img{
 #sponsors{
     padding-top: 2rem;
 }
+/*-----------------------------------------------------index side-------------------------------------------------*/
+/*--------------------velkomst setion -------------------- 
+ Hans Peder og Brandon */
+ #sec-welcome{
+    text-align: center;
+    padding-bottom: 40px;
+}
+#sec-welcome h1{
+    padding: 20px;  
+}
+
+#sec-welcome p{
+    line-height: 1.5rem;
+    text-align: center;
+}
+/*Amanda*/
+@media (max-width:63rem){
+    #sec-welcome p{
+        padding: 0 4rem 2rem 4rem;
+    }
+}
+@media (min-width:63rem){
+    #sec-welcome p{
+        padding: 0 6rem 2rem 6rem;
+    }
+}
+.welcome-img{
+    height: auto;
+    width: 100%;
+}
+.btn-orange{
+    background-color: #E39604;
+    font-family: 'kulim park', sans serif;
+    padding: 1rem;
+    text-decoration: none;
+    color: #fbfbfb;
+    border-radius: 10px;
+}
+/*------------------gå på opdagelse section------*/
+/*Brandon og Hans-Peder*/
+#sec-discover{
+    text-align: center;
+    padding: 1.2rem 0 1.2rem 0;
+}
+#sec-discover h1{
+    padding: 20px;
+}
+#sec-discover h2{
+    padding-bottom: 40px;
+}
+#sec-discover img{
+    max-width: 80%;
+    height: auto;
+}
+/*Amanda*/
+.discover-link{
+    text-decoration: none;
+    color: #FBFBFB;
+}
+.discover-link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+@media (min-width:63rem){
+    .grid-col-2{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/*----------------grunde til flytte til verninge section---------
+Amanda*/
+.section-reasons{
+    text-align: center;
+}
+.section-reasons h1,h2,p,img{
+padding:0.6rem;
+}
+.img-rounded{
+    border-radius: 30px;
+}
+.img-large{
+    max-width: 40rem;
+}
+@media (max-width:63rem){
+    .reasons-content{
+        padding: 1rem 4rem 1rem 4rem;
+    }
+}
+@media (min-width:63rem){
+    .flexbox-split{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .split{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .split-reverse{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .reasons-content{
+        padding:2rem 10rem 2rem 10rem;
+    }
+}
 
 
+/*------------------------------------------------------- KALENDER ------------------------------------
+Amanda og Malle*/
+@media (min-width: 33em){
+    .card-list{
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width: 38em){
+    .card-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card-afholdte-events{
+        grid-column: span 1 /-1!important;
+        grid-row: span 2 / 1!important;
+    }
+}
+@media (min-width: 54em){
+    .card-list{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .card-afholdte-events{
+        grid-column: span 1 /-1!important;
+        grid-row: span 2 / 1!important;
+    }
+}
+
+@media (min-width: 80em){
+    .card-list{
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .card-afholdte-events{
+        grid-column: span 1 /-1!important;
+        grid-row: span 2 / -1!important;
+    }
+}
+
+.card-list {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+.row-span-2{
+    grid-row: span 2;
+}
+
+.card-list .card-item {
+    background: #fbfbfb;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    text-decoration: none;
+    border: 2px solid #6b722F;
+    transition: border 0.5s ease;
+}
+
+
+.card-title{
+    background-color: #6b722F;
+    color: #fbfbfb;
+    padding: 0.5em;
+    height: 7rem;
+}
+
+.card-content{
+    padding: 0.5em;
+}
+a{
+    text-decoration: none;
+}
+
+.link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.link-hvid {
+    color: #fbfbfb !important;
+    font-style: italic;
+}
+
+.link-hvid:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.link {
+    color: #6b722F;
+}
+
+.card-item img{
+    max-width: 100%;
+    border-radius: 0 0 8px 8px;
+}
+
+.card-afholdte-events{
+    background-color: #6b722F;
+    color: #fbfbfb;
+    border-radius: 8px;
+}
+.blomst-lille{
+    height: 2rem;
+    width: auto;
+    margin: 0 1.5rem 0 1.5rem;
+}
+.title-afholdte-events{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title-afholdte-events h3{
+    margin:0.5 0 0.4 0.8!important;
+}
+
+/*-------------------------------------------Om verninge og omegn side----------------------------------*/
+/*verninge sektion*/
+#sec-verninge{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+
+#sec-verninge video{
+    height: auto;
+    width: 100%;
+}
+
+#sec-verninge h2{
+    padding: 20px;
+}
+
+#sec-verninge p{
+    padding: 20px;
+}
+
+
+/*forening og fællesskab sektion*/
+#sec-community{
+    text-align: center;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sec-community h1{
+    padding: 20px;
+}
+
+#sec-community h2{
+    padding: 20px;
+}
+
+#sec-community p{
+    padding: 20px;
+}
+
+#sec-community img{
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+}
+
+#sec-community ul{
+    width: 330px;
+    padding: 0px;  
+}
+
+#sec-community ul li{
+    list-style-type: none; 
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+#sec-community ul li a{
+    
+    color: #FBFBFB;
+    font-size: large;
+    font-family: 'Kulim Park';
+    font-weight: lighter;
+}
+
+.union-list{
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border-style: dotted;
+    padding: 20px;
+}
+
+/*natur section*/
+
+#sec-nature{
+    text-align: center;
+}
+
+#sec-nature h1{
+    padding: 20px;
+}
+
+#sec-nature h2{
+    padding: 20px;
+}
+
+#sec-nature p{
+    padding: 20px;
+}
+
+#sec-nature img{
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+}
