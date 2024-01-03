@@ -1,16 +1,22 @@
+/*mobil*/
 *{
     box-sizing: border-box;
     margin: 0;
 }
 
+html{
+    width: 100%;
+}
+
 body{
+    width: 100%;
     display: grid;
-    grid-template-rows: auto auto 100px;
-    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
     grid-template-areas: 
-    'header header header header header header header header'
-    'main main main main main main main main'
-    'footer footer footer footer footer footer footer footer';
+    'header header header header'
+    'main main main main'
+    'footer footer footer footer';
 }
 
 h1{
@@ -49,11 +55,20 @@ p{
 /*header*/
 header{
     grid-area: header;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     background-color: #6B722F;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    z-index: 1;
+}
+
+.logo{
+    height: auto;
+    width: auto;
 }
 
 /* dropdown menu */
@@ -76,14 +91,14 @@ header{
     position: absolute;
     background-color: #6B722F;
     min-width: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2);
     right: 0;
     z-index: 1;
     overflow: visible;
 }
   
 /* Links inside the dropdown */
-.dropdown-content a {
+.dropdown a{
     color: #FBFBFB;
     padding: 30px 45px;
     text-decoration: none;
@@ -96,63 +111,57 @@ header{
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
+/*main*/
 main{
     grid-area: main;
 }
 
-#sec-welcome{
-    text-align: center;
-    padding-bottom: 40px;
-}
-
-#sec-welcome video{
-    height: 360px;
-    width: 400px;
-}
-
-#sec-welcome h1{
-    padding: 20px;  
-}
-
-#sec-welcome h2{
-    padding: 20px;
-}
-
-#sec-welcome p{
-    padding: 20px;
-}
-
-#sec-discover{
-    text-align: center;
-}
-#sec-discover h1{
-    padding: 20px;
-}
-#sec-discover img{
-    border-radius: 20px;
-    width: 80%;
-    height: auto;
-}
-#sec-discover h2{
-    padding-bottom: 40px;
-}
-#sec-reasons{
-    text-align: center;
-    padding-bottom: 40px;
-}
-#sec-reasons h1{
-    padding: 20px;
-}
-#sec-reasons img{
-    border-radius: 20px;
-}
-#sec-reasons p{
-    padding: 20px;
-}
-
+/*footer*/
 footer{
     grid-area: footer;
-    background-color: aqua;
+    background-color: #6B722F;
+    color: #FBFBFB;
+    text-align: center;
+    
 }
+
+footer .bg-green-font-white{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h1{
+    padding-top: 40px;
+}
+
+footer ul{
+    width: 270px;
+    padding: 0px;
+}
+
+footer ul li{
+    list-style-type: none;  
+}
+
+footer ul li a{
+    float: left;
+    color: #FBFBFB;
+    text-decoration: none;
+    display: block;
+    font-size: x-large;
+    font-family: 'Kulim Park';
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+footer img{
+    padding-top: 20px;
+}
+
+/*laptop*/
+
+
 
 

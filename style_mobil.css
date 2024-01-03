@@ -1,0 +1,171 @@
+/*index side*/
+/*velkomst section*/
+#sec-welcome{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#sec-welcome video{
+    height: auto;
+    width: 100%;
+}
+
+#sec-welcome h1{
+    padding: 20px;  
+}
+
+#sec-welcome h2{
+    padding: 20px;
+}
+
+#sec-welcome p{
+    padding: 20px;
+}
+
+/*gå på opdagelse section*/
+#sec-discover{
+    text-align: center;
+}
+#sec-discover h1{
+    padding: 20px;
+}
+#sec-discover h2{
+    padding-bottom: 40px;
+}
+
+#sec-discover a{
+    padding-top: 0px;
+}
+
+#sec-discover img{
+    border-radius: 20px;
+    width: 80%;
+    height: auto;
+}
+
+/*grunde til flytte til verninge section*/
+#sec-reasons{
+    text-align: center;
+    padding-bottom: 40px;
+}
+#sec-reasons h1{
+    padding: 20px;
+}
+#sec-reasons h2{
+    padding-top: 20px;
+}
+
+#sec-reasons img{
+    border-radius: 20px;
+}
+#sec-reasons p{
+    padding: 20px;
+}
+
+/*om verninge og omegn side*/
+/*verninge section*/
+#sec-verninge{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#sec-verninge h1{
+    padding: 20px;
+}
+
+#sec-verninge video{
+    height: auto;
+    width: 100%;
+}
+
+#sec-verninge h2{
+    padding: 20px;
+}
+
+#sec-verninge p{
+    padding: 20px;
+}
+
+#sec-verninge img{
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/*forening og fællesskab section*/
+#sec-community{
+    text-align: center;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sec-community h1{
+    padding: 20px;
+}
+
+#sec-community h2{
+    padding: 20px;
+}
+
+#sec-community p{
+    padding: 20px;
+}
+
+#sec-community img{
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+}
+
+#sec-community ul{
+    width: 330px;
+    padding: 0px;  
+}
+
+#sec-community ul li{
+    list-style-type: none; 
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+#sec-community ul li a{
+    
+    color: #FBFBFB;
+    font-size: large;
+    font-family: 'Kulim Park';
+    font-weight: lighter;
+}
+
+.union-list{
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border-style: dotted;
+    padding: 20px;
+}
+
+/*natur section*/
+
+#sec-nature{
+    text-align: center;
+}
+
+#sec-nature h1{
+    padding: 20px;
+}
+
+#sec-nature h2{
+    padding: 20px;
+}
+
+#sec-nature p{
+    padding: 20px;
+}
+
+#sec-nature img{
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+}
