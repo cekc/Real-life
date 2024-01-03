@@ -1,36 +1,22 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--Meta test af Brandon og Hans-Peder-->
 <html lang="da">
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--stylesheet ændres således at vi kun har to: en til mobil og en til laptop-->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style_index.css">
-    <link rel="stylesheet" href="style_laptop.css">
 
     <!--import af burger ikon-->
     <script src="https://kit.fontawesome.com/158830f7f7.js" crossorigin="anonymous"></script>
 
-    <!--import af square peg-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
-
-    <!--import af kulim park-->
-    <link href="https://fonts.googleapis.com/css2?family=Kulim+Park:wght@200;400&family=Square+Peg&display=swap" rel="stylesheet">
-
-   <!--import af javascript funktionalitet-->
+   <!--import af javascript til dropdown menu-->
     <script src="dropdown.js"></script>
 
     <title>Forside</title>
 
 </head>
-<body>
-
-
-    <div class="grid-col-4">
+<body> <!--- Brandon og Hans-Peder-->
         <header>       
             <!-- logo -->
             <a class="logo" href="index.html">
@@ -44,7 +30,7 @@
                     <ul class="nav-menu">
                         <li><a href="index.html" class="nav-active">Forside</a></li>
                         <li><a href="verninge_og_omegn.html">Verninge og Omegn</a></li>
-                        <li><a href="#">Kalender</a></li>
+                        <li><a href="kalender.html">Kalender</a></li>
                         <li><a href="#">Verninge Borgerforening</a></li>
                         <li><a href="#">Kontakt</a></li>
                      </ul>
@@ -55,51 +41,86 @@
         </header>
 
         <main>
-            <!-- velkommen section-->
-            <section class="bg-white-font-black" id="sec-welcome">
-                <video src="https://www.youtube.com/watch?v=_2RNqzVXxBI" poster="Img/welcome_video.svg"></video>
-                <h1>Velkommen til Verninge og omegn</h1>
+            <!-- velkommen section (Amanda, Brandon og Hans-Peder)-->
+            <section class="bg-white-font-black span-4" id="sec-welcome">
+                <img src="img/welcome_video.svg" class="welcome-img">
+                
+                <div class="pg-title">
+                    <img src="img/blomst.png" class="pg-title-blomst" alt="verninge blomst logo">
+                    <h1>Velkommen til Verninge og omegn</h1>
+                    <img src="img/blomst.png"  class="pg-title-blomst" alt="verninge blomst logo">
+                </div>
                 <h3>I Verninge skaber fællesskabet gode forudsætninger for børnenes trivsel</h3>
                 <p>Et stærkt lokalsamfund som i Verninge er afgørende for børns trivsel og udvikling, styrket gennem positiv social interaktion. Nære bånd med naboer og lokalsamfund skaber en tryg atmosfære, afgørende for børns mentale velbefindende.</p>
                 <p> Dette gode fællesskab fremmer vigtige sociale færdigheder som empati og samarbejde. Verninge's lokalsamfund er også en kilde til læring om kulturelle værdier og traditioner, hvilket udvikler respekt for forskellige perspektiver. Samlet set udgør Verninge's fællesskab en berigende ramme, hvor børn kan vokse, lære og opleve glæden ved at være en del af noget større end dem selv.</p>
                 <a href="verninge_og_omegn.html" class="btn-orange">Læs mere om Verninge og Omegn</a>
             </section>
 
-            <!--gå på opdagelse section-->
-            <section class="bg-green-font-white" id="sec-discover">
-                <h2 class=""section-title-white>Gå på opdagelse i Verninge og omegn</h1>
-                <a href="#" class="discover-link"><img class="discover-img img-rounded" src="Img/dicover-verninge.png" alt="oversikt over Verninge">
+            <!--gå på opdagelse section (Brandon, Hans-peder)-->
+            <section class="bg-green-font-white span-4" id="sec-discover">
+                <h2 class=""section-title-white>Gå på opdagelse i Verninge og omegn</h2>
+                    <div class="grid-col-2">
+                <a href="#" class="discover-link"><img class="discover-img img-rounded" src="img/dicover-verninge.png" alt="oversikt over Verninge">
                 <h3>Verninge og omegn</h2></a>
-                <a href="#" class="discover-link"><img class="discover-img img-rounded" src="Img/discover-calender.png" alt="se kommende events">
+                <a href="#" class="discover-link"><img class="discover-img img-rounded" src="img/discover-calender.png" alt="se kommende events">
                 <h3>Kalender</h3></a>
-                <a href="#" class="discover-link"><img class="discover-img img-rounded" src="Img/discover-union.png" alt="Bestyrelsen Praktisk information Sponsorater Bliv frivillig">
+                <a href="#" class="discover-link"><img class="discover-img img-rounded" src="img/discover-union.png" alt="Bestyrelsen Praktisk information Sponsorater Bliv frivillig">
                 <h3>Om borgerforeningen</h3></a>
-                <a href="#" class="discover-link"><img class="discover-img img-rounded" src="Img/discover-contakt.png" alt="Find vej Kontakt bestyrelsen Foreninger Dagtilbud/Skoler">
+                <a href="#" class="discover-link"><img class="discover-img img-rounded" src="img/discover-contakt.png" alt="Find vej Kontakt bestyrelsen Foreninger Dagtilbud/Skoler">
                 <h3>Kontakt</h3></a>
+            </div>
             </section>
 
-            <!--grunde til ... section-->
+            <!--"5 gode grunde" section (Amanda, Brandon og Hans-Peder)-->
             <section class="bg-white-font-black section-reasons">
-                <h1>5 gode grunde til at flytte til Verninge</h1>
-                <h2>1. Smuk natur med kort afstand til Odense</h2>
-                <p>Verninge ligger i bekvem nærhed til Odense, hvilket gør det nemt at nyde byens faciliteter, kulturtilbud og indkøbsmuligheder på blot en kort køretur.</p>
-                <img src="Img/reasons-kort.png" alt="kort" class="img-rounded">
-                <h2>2. Overkommelige boligpriser</h2>
-                <p>Verninge tilbyder overkommelige boligpriser og ledige byggegrunde, hvilket gør det lettere for familier at finde et hjem, der passer til deres behov og budget.</p>
-                <img src="Img/reasons-solgt.png" alt="solgt" class="img-rounded">
-                <h2>3. Nærliggende skolemuligheder og gode dagtilbud</h2>
-                <p>Verninge har adgang til lokale skoler, herunder Verninge skole, der giver børnene en nærliggende og kvalitetsorienteret uddannelsesmulighed. Yderligere uddannelsesmuligheder som Vestfyns Gymnasium styrker områdets uddannelsesprofil.</p>
-                <img src="Img/reasons-skole.png" alt="skole" class="img-rounded">
-                <h2>4. Trygt fællesskab og aktivt foreningsliv.</h2>
-                <p>I Verninge oplever du et varmt og trygt fællesskab, hvor naboer og lokale kender hinanden. Det sociale bånd styrker trivslen og skaber en følelse af samhørighed og gensidig støtte</p>
-                <img src="Img/reasons-famile.png" alt="familie" class="img-rounded">
-                <h2>5. God offentlig transport</h2>
-                <p>Med gode busforbindelser til Assens, Odense og omkringliggende byer er Verninge godt forbundet, hvilket gør det nemt at komme rundt i regionen</p>
-                <img src="Img/reasons-bus.png" alt="bus" class="img-rounded">
+                <h2>5 gode grunde til at flytte til Verninge</h2>
+                <div class="flexbox-split">
+                    <div class="split reasons-content">
+                            <div>
+                                <h3>1. Smuk natur med kort afstand til Odense</h3>
+                                <p>Verninge ligger i bekvem nærhed til Odense, hvilket gør det nemt at nyde byens faciliteter, kulturtilbud og indkøbsmuligheder på blot en kort køretur.</p>
+                            </div>
+                            <div>
+                                <img src="img/kort.png" alt="kort" class="img-rounded img-large">
+                            </div>
+                    </div>
+                
+                    <div class="split-reverse reasons-content">
+                        <div>
+                            <h3>2. Overkommelige boligpriser</h3>
+                            <p>Verninge tilbyder overkommelige boligpriser og ledige byggegrunde, hvilket gør det lettere for familier at finde et hjem, der passer til deres behov og budget.</p>
+                        </div>
+                        <img src="img/bolig.png" alt="solgt" class="img-rounded img-large">     
+                    </div> 
+
+                    <div class="split reasons-content">
+                        <div>
+                            <h3>3. Nærliggende skolemuligheder og gode dagtilbud</h3>
+                            <p>Verninge har adgang til lokale skoler, herunder Verninge skole, der giver børnene en nærliggende og kvalitetsorienteret uddannelsesmulighed. Yderligere uddannelsesmuligheder som Vestfyns Gymnasium styrker områdets uddannelsesprofil.</p>
+                        </div>
+                        <img src="img/skole.png" alt="skole" class="img-rounded img-large">
+                    </div>
+
+                    <div class="split-reverse reasons-content">
+                        <div>
+                            <h3>4. Trygt fællesskab og aktivt foreningsliv.</h3>
+                            <p>I Verninge oplever du et varmt og trygt fællesskab, hvor naboer og lokale kender hinanden. Det sociale bånd styrker trivslen og skaber en følelse af samhørighed og gensidig støtte</p>
+                        </div>
+                        <img src="img/tryg.png" alt="familie" class="img-rounded img-large">
+                    </div>
+
+                    <div class="split reasons-content">
+                        <div>
+                            <h3>5. God offentlig transport</h3>
+                            <p>Med gode busforbindelser til Assens, Odense og omkringliggende byer er Verninge godt forbundet, hvilket gør det nemt at komme rundt i regionen</p>
+                        </div>
+                        <img src="img/bus.png" alt="bus" class="img-rounded img-large">
+                    </div>
+                </div>
             </section>
         
         </main>
-
+        <!--- Footer (Brandon, Hans-Peder)-->
         <footer>
 
             <div class="bg-green-font-white">
@@ -114,16 +135,11 @@
                 </div>
                 <div id="sponsors">
                     <h2 class="section-title-white">Tak til vores samarbejdspartnere</h2>
-                    <img src="Img/img-sponser.png" alt="">
-                    <img src="Img/img-sponser.png" alt="">
-                    <img src="Img/img-sponser.png" alt="">
-                    <img src="Img/img-sponser.png" alt="">
+                    <img src="img/img-sponser.png" alt="">
+                    <img src="img/img-sponser.png" alt="">
+                    <img src="img/img-sponser.png" alt="">
+                    <img src="img/img-sponser.png" alt="">
                 </div>
-            </div>
-
         </footer>
-
-    </div>
-
 </body>
 </html>

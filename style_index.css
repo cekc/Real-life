@@ -1,15 +1,10 @@
 /*index side*/
-/*velkomst section*/
+/*--------------------velkomst setion -------------------- 
+ Hans Peder og Brandon */
 #sec-welcome{
     text-align: center;
     padding-bottom: 40px;
 }
-
-#sec-welcome video{
-    height: auto;
-    width: 100%;
-}
-
 #sec-welcome h1{
     padding: 20px;  
 }
@@ -18,6 +13,7 @@
     line-height: 1.5rem;
     text-align: center;
 }
+/*Amanda*/
 @media (max-width:63rem){
     #sec-welcome p{
         padding: 0 4rem 2rem 4rem;
@@ -28,8 +24,9 @@
         padding: 0 6rem 2rem 6rem;
     }
 }
-.padding-20{
-    padding:1.2rem;
+.welcome-img{
+    height: auto;
+    width: 100%;
 }
 .btn-orange{
     background-color: #E39604;
@@ -39,10 +36,11 @@
     color: #fbfbfb;
     border-radius: 10px;
 }
-/*gå på opdagelse section*/
+/*------------------gå på opdagelse section---------------
+Brandon og Hans-Peder*/
 #sec-discover{
     text-align: center;
-    padding-bottom: 1.2rem;
+    padding: 1.2rem 0 1.2rem 0;
 }
 #sec-discover h1{
     padding: 20px;
@@ -54,6 +52,7 @@
     max-width: 80%;
     height: auto;
 }
+/*Amanda*/
 .discover-link{
     text-decoration: none;
     color: #FBFBFB;
@@ -62,7 +61,15 @@
     cursor: pointer;
     text-decoration: underline;
 }
-/*grunde til flytte til verninge section*/
+@media (min-width:63rem){
+    .grid-col-2{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/*---------------------grunde til flytte til verninge section--------------
+Amanda*/
 .section-reasons{
     text-align: center;
 }
@@ -71,4 +78,29 @@ padding:0.6rem;
 }
 .img-rounded{
     border-radius: 30px;
+}
+@media (max-width:63rem){
+    .reasons-content{
+        padding: 1rem 4rem 1rem 4rem;
+    }
+}
+@media (min-width:63rem){
+    .flexbox-split{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .split{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .split-reverse{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .reasons-content{
+        padding:2rem 10rem 2rem 10rem;
+    }
 }

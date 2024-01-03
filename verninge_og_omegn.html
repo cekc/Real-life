@@ -1,37 +1,26 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--Meta test af Brandon og Hans-Peder-->
 <html lang="da">
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--stylesheet ændres således at vi kun har to: en til mobil og en til laptop-->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style_mobil.css">
-    <link rel="stylesheet" href="style_laptop.css">
+    <link rel="stylesheet" href="style_index.css">
 
     <!--import af burger ikon-->
     <script src="https://kit.fontawesome.com/158830f7f7.js" crossorigin="anonymous"></script>
 
-    <!--import af square peg-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
-
-    <!--import af kulim park-->
-    <link href="https://fonts.googleapis.com/css2?family=Kulim+Park:wght@200;400&family=Square+Peg&display=swap" rel="stylesheet">
-
-   <!--import af javascript funktionalitet-->
+   <!--import af javascript til dropdown menu-->
     <script src="dropdown.js"></script>
 
-    <title>Verninge og omegn</title>
+    <title>Verninge og Omegn</title>
 
 </head>
 <body>
     <header>       
         <!-- logo -->
         <a class="logo" href="index.html">
-            <img src="grafik/logo_mobil.png" alt="Verninge og Omegn logo">
         </a>
 
         <!-- Burger menu Mobil-->
@@ -39,11 +28,13 @@
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
                 <div id="myDropdown" class="dropdown-content">
-                <a href="index.html">Forside</a>
-                <a href="verninge_og_omegn.html">Verninge og Omegn</a>
-                <a href="#">Kalender</a>
-                <a href="#">Verninge Borgerforening</a>
-                <a href="#">Kontakt</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" >Forside</a></li>
+                    <li><a href="verninge_og_omegn.html" class="nav-active">Verninge og Omegn</a></li>
+                    <li><a href="kalender.html">Kalender</a></li>
+                    <li><a href="#">Verninge Borgerforening</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                 </ul>
                 </div>
             </div>
         </nav>
@@ -52,12 +43,14 @@
 
     <main>
        
-        <!--verninge og omegn section-->
+        <!--verninge og omegn section (Brandon og Hans-Peder)-->
         <section class="bg-white-font-black" id="sec-verninge">
-
-            <h1>Verninge og omegn</h1>
-
-            <video src="" poster="Img/verninge_video_mobil.png"></video>
+            <div class="pg-title">
+                <img src="img/blomst.png" class="pg-title-blomst" alt="verninge blomst logo">
+                <h1>Verninge og omegn</h1>
+                <img src="img/blomst.png"  class="pg-title-blomst" alt="verninge blomst logo">
+            </div>
+            <video src="" poster="img/verninge-omegn-video.png"></video>
 
             <h1>Trivsel og udvikling er centralt hos Verninges skoler og dagtilbud</h1>
 
@@ -136,27 +129,27 @@
     
     </main>
 
-    <footer>
+        <!--- Footer (Brandon, Hans-Peder)-->
+        <footer>
 
-        <div class="bg-green-font-white">
-            <h1>Kontakt os</h1>
-
-            <ul>
-                <li><a href="#"><i class="fa-regular fa-envelope"></i> formand@verninge.dk</a></li>
-                <li><a href="#"><i class="fa-solid fa-phone"></i> 29 90 43 87</a></li>
-                <li><a href="#"><i class="fa-brands fa-facebook"></i> Find os på Facebook</a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i> Find os på Instagram</a></li>
-            </ul>
-
-            <h1>Tak til vores samarbejdspartnere</h1>
-
-            <img src="Img/img-sponser.png" alt="">
-            <img src="Img/img-sponser.png" alt="">
-            <img src="Img/img-sponser.png" alt="">
-            <img src="Img/img-sponser.png" alt="">
-        </div>
-
-    </footer>
+            <div class="bg-green-font-white">
+                <div id="contact">
+                    <h2 class="section-title-white">Kontakt os</h2>      
+                    <ul>
+                        <li><a href="#"><i class="fa-regular fa-envelope"></i> formand@verninge.dk</a></li>
+                        <li><a href="#"><i class="fa-solid fa-phone"></i> 29 90 43 87</a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i> Find os på Facebook</a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i> Find os på Instagram</a></li>
+                    </ul>
+                </div>
+                <div id="sponsors">
+                    <h2 class="section-title-white">Tak til vores samarbejdspartnere</h2>
+                    <img src="img/img-sponser.png" alt="">
+                    <img src="img/img-sponser.png" alt="">
+                    <img src="img/img-sponser.png" alt="">
+                    <img src="img/img-sponser.png" alt="">
+                </div>
+        </footer>
 
 </body>
 </html>
