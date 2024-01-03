@@ -8,7 +8,18 @@ html{
     width: 100%;
 }
 
-body{
+/*body{
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+    'header header header header'
+    'main main main main'
+    'footer footer footer footer';
+}*/
+
+.grid-col-4{
     width: 100%;
     display: grid;
     grid-template-rows: auto auto auto;
@@ -162,6 +173,25 @@ footer img{
 
 /*laptop*/
 
-
+@media (min-width: 54em){
+    .dropbtn{
+        display: none;
+    }
+    .dropdown i{
+        display: none;
+    }
+    .dropdown-content {
+        display: block;
+    }
+    .dropdown a{
+        color: #FBFBFB;
+        padding: 30px 45px;
+        text-decoration: none;
+        display: inline;
+        font-size: x-large;
+        font-family: 'Kulim Park';
+        font-weight: bold;
+    }
+}
 
 
