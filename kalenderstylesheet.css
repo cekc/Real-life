@@ -24,47 +24,6 @@ body {
     margin: 2rem 2rem 2rem 2rem;
 }
 
-h1{
-    font-family: 'square peg';
-    color: #6b722F;
-    font-size: 5rem;
-    font-weight: 500;
-}
-
-h2 {
-    font-family: 'square peg';
-    font-weight: 400;
-    font-size: 2.5rem;
-    text-align: center;
-    margin: 0.8rem;
-}
-
-h3 {
-    font-family: 'kulim park';
-    font-weight: 400;
-    margin: 0.8rem;
-}
-
-
-h4 {
-    font-family: 'kulim park';
-    font-weight: 400;
-    text-align: left;
-    margin: 0.8rem;
-}
-
-h5{
-    font-family: 'kulim park';
-    font-weight: 300;
-    text-align: left;
-    margin-left: 0.8rem;
-}
-
-p {
-    font-family: 'kulim park';
-    font-weight: 300;
-    padding:0.4rem 1rem 0.4rem 1rem;
-}
 
 @media (min-width: 33em){
     .card-list{

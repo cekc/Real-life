@@ -1,0 +1,74 @@
+/*index side*/
+/*velkomst section*/
+#sec-welcome{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#sec-welcome video{
+    height: auto;
+    width: 100%;
+}
+
+#sec-welcome h1{
+    padding: 20px;  
+}
+
+#sec-welcome p{
+    line-height: 1.5rem;
+    text-align: center;
+}
+@media (max-width:63rem){
+    #sec-welcome p{
+        padding: 0 4rem 2rem 4rem;
+    }
+}
+@media (min-width:63rem){
+    #sec-welcome p{
+        padding: 0 6rem 2rem 6rem;
+    }
+}
+.padding-20{
+    padding:1.2rem;
+}
+.btn-orange{
+    background-color: #E39604;
+    font-family: 'kulim park', sans serif;
+    padding: 1rem;
+    text-decoration: none;
+    color: #fbfbfb;
+    border-radius: 10px;
+}
+/*gå på opdagelse section*/
+#sec-discover{
+    text-align: center;
+    padding-bottom: 1.2rem;
+}
+#sec-discover h1{
+    padding: 20px;
+}
+#sec-discover h2{
+    padding-bottom: 40px;
+}
+#sec-discover img{
+    max-width: 80%;
+    height: auto;
+}
+.discover-link{
+    text-decoration: none;
+    color: #FBFBFB;
+}
+.discover-link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+/*grunde til flytte til verninge section*/
+.section-reasons{
+    text-align: center;
+}
+.section-reasons h1,h2,p,img{
+padding:0.6rem;
+}
+.img-rounded{
+    border-radius: 30px;
+}
