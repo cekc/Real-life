@@ -6,6 +6,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    padding:0;
 }
 
 html{
@@ -60,6 +61,7 @@ p {
     font-family: 'kulim park';
     font-weight: 300;
     padding:0.4rem 1rem 0.4rem 1rem;
+    line-height: 1.5rem;
 }
 
 .pg-title {
@@ -67,7 +69,6 @@ p {
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    padding-top: 5rem;
 }
 
 .pg-title-blomst{
@@ -79,6 +80,9 @@ p {
     .pg-title-blomst{
         display: none;
     }
+}
+.text-center{
+    text-align: center;
 }
 /*--------------section classes-----------------
 Brandon og Hans Peder*/
@@ -204,12 +208,13 @@ header{
    
 .show {display:block;}
 
-/*main*/
+/*main
+Brandon og Hans-Peder */
 main{
     grid-area: main;
 }
 
-/*--------------footer----------------
+/*------------------footer--------------------
 Brandon, Hans Peder*/
 footer{
     grid-area: footer;
@@ -226,10 +231,6 @@ footer .bg-green-font-white{
     align-items: center;
     flex-wrap: nowrap;
     max-width: 100%;
-}
-
-footer h1{
-    padding-top: 40px;
 }
 
 footer ul li{
@@ -252,6 +253,21 @@ footer img{
 }
 #sponsors{
     padding-top: 2rem;
+}
+/*Amanda*/
+footer ul{
+    max-width: 50rem;
+}
+.footer-kontakt{
+    justify-content: space-between;
+}
+.footer-kontakt li{
+    margin: 1rem 4rem 1rem 2rem;
+}
+
+.footer-kontakt i{
+    font-size: 2.5rem;
+    margin-right: 1rem;
 }
 /*-----------------------------------------------------index side-------------------------------------------------*/
 /*--------------------velkomst setion -------------------- 
@@ -279,7 +295,7 @@ footer img{
         padding: 0 6rem 2rem 6rem;
     }
 }
-.welcome-img{
+.img-xlarge{
     height: auto;
     width: 100%;
 }
@@ -457,6 +473,7 @@ a{
 .card-item img{
     max-width: 100%;
     border-radius: 0 0 8px 8px;
+    padding:0;
 }
 
 .card-afholdte-events{
@@ -480,10 +497,11 @@ a{
 }
 
 /*-------------------------------------------Om verninge og omegn side----------------------------------*/
-/*verninge sektion*/
+/*verninge sektion
+Amanda, Brandon og Hans-Peder*/
 #sec-verninge{
     text-align: center;
-    padding-bottom: 40px;
+    padding: 6rem;
 }
 
 
@@ -492,73 +510,75 @@ a{
     width: 100%;
 }
 
-#sec-verninge h2{
-    padding: 20px;
-}
+
 
 #sec-verninge p{
     padding: 20px;
+    line-height: 1.5rem;
+    text-align: justify;
+
 }
 
 
 /*forening og fællesskab sektion*/
 #sec-community{
     text-align: center;
-    padding-bottom: 40px;
+    padding: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#sec-community h1{
-    padding: 20px;
-}
-
 #sec-community h2{
-    padding: 20px;
+    padding-top: 2rem;
 }
 
 #sec-community p{
-    padding: 20px;
+    padding: 1rem 2rem 1rem 2rem;
+    text-align: justify;
 }
 
 #sec-community img{
-    width: 80%;
+    max-width: 50%;
     height: auto;
-    border-radius: 20px;
 }
 
-#sec-community ul{
-    width: 330px;
-    padding: 0px;  
-}
 
 #sec-community ul li{
     list-style-type: none; 
     text-align: left;
-    padding-bottom: 10px;
+    line-height: 2rem;
 }
 
 #sec-community ul li a{
-    
     color: #FBFBFB;
+    display: block;
     font-size: large;
     font-family: 'Kulim Park';
     font-weight: lighter;
 }
 
 .union-list{
-    margin-bottom: 20px;
+    margin: 0 5rem 0 5rem;
     border-radius: 20px;
     border-style: dotted;
-    padding: 20px;
+    padding: 1rem 2rem 1rem 2rem;
+    max-width: 70%;
+}
+.flex-space-around{
+    justify-content: space-around!important;
+}
+.content{
+    padding: 2rem 0 2rem 0;
 }
 
-/*natur section*/
+/*natur section
+Brandon og Hans-Peder*/
 
 #sec-nature{
     text-align: center;
+    padding: 0 6rem 0 6rem;
 }
 
 #sec-nature h1{
@@ -577,4 +597,17 @@ a{
     width: 80%;
     height: auto;
     border-radius: 20px;
+}
+
+/*Værd at vide om Verninge sektion
+Amanda*/
+.padding-6rem{
+    padding: 0 6rem 0 6rem;
+}
+
+#hjertestartere ul{
+padding: 2rem;
+font-family: 'kulim park';
+text-align: left;
+line-height: 1.5rem;
 }
