@@ -2,6 +2,8 @@ Tredje projekt for Dkmmd23b2o
 Lavet af gruppe 5: 
 Amanda Madsen, Brandon Day, Hans-Peder Thaysen, Lea Dinitzen og Malle Hansen
 
+Billeder er fra Unsplash og Verninge.dk, originalerne kan findes i den vedlagte Figma fil
+
 Fordeling af kodearbejde:
 Brandon og Hans-Peder;
 Header (links, dropdown, javascript og styling) 
