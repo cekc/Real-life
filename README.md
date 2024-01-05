@@ -8,19 +8,18 @@ Fordeling af kodearbejde:
 Brandon og Hans-Peder;
 Header (links, dropdown, javascript og styling) 
 footer (Indhold)
-Index (Indhold og CSS) 
+Index (Indhold og CSS -ud fra ID) 
 Om Verninge og Omegn (Indhold og Styling fra ID)
 
-Malle & Amanda:
-Kalender
+Malle:
+Kalender (Cards og generel opsætning, )
 
 Amanda:
-CSS: (Grid, Flexbox, media queries og overordnede rettelser, herunder omskrivning af modstridende styling) 
-HTML: Tilpasning af kode i classes for Grid og Flexbox, rettelser af væsentlige 
+CSS (Grid, Flexbox, media queries og overordnede rettelser herunder samling af gentagende styling i classes) 
+HTML: Indryk på linjer, Opdeling i classes til Grid og Flexbox
 
 Der er kommentarer gennem koden der indikerer hvordan arbejdet er fordelt. 
 
-PS. Under samling af koden, har jeg (Amanda) forsøgt at gøre Header, Footer, Index og "Om verninge" responsiv, uden at ændre gruppemedlemmernes eksisterende kode mere end nødvendigt. 
-Jeg har forsøgt at opdele CSS efter hvem der har lavet det, så der stadig er sammenhæng i afsnittene.
+Under merging af koden er overskivende css rettet af Amanda.
 
 

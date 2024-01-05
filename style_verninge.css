@@ -341,16 +341,11 @@ footer ul{
 }
 /*----------------grunde til flytte til verninge section---------
 Amanda*/
-#section-reasons{
+.section-reasons{
     text-align: center;
 }
-#section-reasons h1,h2,img{
+.section-reasons h1,h2,p,img{
 padding:0.6rem;
-}
-#sec-nature a{
-    text-decoration: none;
-    font-style: italic;
-    color: #6B722F;
 }
 .img-rounded{
     border-radius: 30px;
@@ -360,8 +355,7 @@ padding:0.6rem;
 }
 @media (max-width:63rem){
     .reasons-content{
-        padding: 1rem 2rem 1rem 2rem;
-        max-width: 100%!important;
+        padding: 1rem 4rem 1rem 4rem;
     }
 }
 @media (min-width:63rem){
@@ -497,6 +491,7 @@ a{
     justify-content: space-around;
     align-items: center;
 }
+
 .title-afholdte-events h3{
     margin:0.5 0 0.4 0.8!important;
 }
@@ -506,19 +501,17 @@ a{
 Amanda, Brandon og Hans-Peder*/
 #sec-verninge{
     text-align: center;
+    padding: 6rem;
 }
-@media (min-width:63rem){
-    #sec-verninge{
-        padding: 6rem;
-    }
-    #sec-community{
-        padding: 6rem;
-    }
-}
+
+
 #sec-verninge video{
     height: auto;
     width: 100%;
 }
+
+
+
 #sec-verninge p{
     padding: 20px;
     line-height: 1.5rem;
@@ -526,9 +519,11 @@ Amanda, Brandon og Hans-Peder*/
 
 }
 
+
 /*forening og fællesskab sektion*/
 #sec-community{
     text-align: center;
+    padding: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -543,30 +538,13 @@ Amanda, Brandon og Hans-Peder*/
     padding: 1rem 2rem 1rem 2rem;
     text-align: justify;
 }
-@media (max-width:63rem){
-    #sec-community{
-        padding: 1rem;
-    }
-    #sec-community img{
-        max-width: 100%;
-    }
-    .union-list ul{
-        display:flex;
-        flex-direction:column;
-        align-items: center;
-    }
-}
-@media (min-width:63rem){
-    #sec-community img{
+
+#sec-community img{
     max-width: 50%;
     height: auto;
 }
-.union-list{
-    margin: 0 5rem 0 5rem;
-    max-width: 70%;
-    padding: 1rem 2rem 1rem 2rem;
-}
-}
+
+
 #sec-community ul li{
     list-style-type: none; 
     text-align: left;
@@ -582,10 +560,11 @@ Amanda, Brandon og Hans-Peder*/
 }
 
 .union-list{
+    margin: 0 5rem 0 5rem;
     border-radius: 20px;
     border-style: dotted;
-
-
+    padding: 1rem 2rem 1rem 2rem;
+    max-width: 70%;
 }
 .flex-space-around{
     justify-content: space-around!important;
@@ -593,11 +572,13 @@ Amanda, Brandon og Hans-Peder*/
 .content{
     padding: 2rem 0 2rem 0;
 }
+
 /*natur section
 Brandon og Hans-Peder*/
 
 #sec-nature{
     text-align: center;
+    padding: 0 6rem 0 6rem;
 }
 
 #sec-nature h1{
@@ -617,28 +598,12 @@ Brandon og Hans-Peder*/
     height: auto;
     border-radius: 20px;
 }
-/*Amanda*/
-@media (max-width:63rem){
-    .img-medium{
-        max-width: 100%;
-    }
-    .padding-1rem{
-        padding: 1rem;
-    }
-}
 
-@media (min-width:63rem){
-    .img-medium{
-    max-width: 50%;
-    height: auto;
-}
+/*Værd at vide om Verninge sektion
+Amanda*/
 .padding-6rem{
     padding: 0 6rem 0 6rem;
 }
-}
-
-/*----------Værd at vide om Verninge sektion----------
-Amanda*/
 
 #hjertestartere ul{
 padding: 2rem;
