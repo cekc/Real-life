@@ -350,12 +350,13 @@ padding:0.6rem;
 .img-rounded{
     border-radius: 30px;
 }
-.img-large{
-    max-width: 40rem;
-}
+
 @media (max-width:63rem){
     .reasons-content{
         padding: 1rem 4rem 1rem 4rem;
+    }
+    .img-large{
+        max-width: 20rem;
     }
 }
 @media (min-width:63rem){
@@ -376,6 +377,9 @@ padding:0.6rem;
     }
     .reasons-content{
         padding:2rem 10rem 2rem 10rem;
+    }
+    .img-large{
+        max-width: 40rem;
     }
 }
 
@@ -523,7 +527,6 @@ Amanda, Brandon og Hans-Peder*/
 /*forening og fællesskab sektion*/
 #sec-community{
     text-align: center;
-    padding: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -539,12 +542,6 @@ Amanda, Brandon og Hans-Peder*/
     text-align: justify;
 }
 
-#sec-community img{
-    max-width: 50%;
-    height: auto;
-}
-
-
 #sec-community ul li{
     list-style-type: none; 
     text-align: left;
@@ -559,13 +556,6 @@ Amanda, Brandon og Hans-Peder*/
     font-weight: lighter;
 }
 
-.union-list{
-    margin: 0 5rem 0 5rem;
-    border-radius: 20px;
-    border-style: dotted;
-    padding: 1rem 2rem 1rem 2rem;
-    max-width: 70%;
-}
 .flex-space-around{
     justify-content: space-around!important;
 }
@@ -573,12 +563,50 @@ Amanda, Brandon og Hans-Peder*/
     padding: 2rem 0 2rem 0;
 }
 
+/*---------Malle-----*/
+
+@media (max-width: 63rem) {
+    #sec-community img{
+        max-width: 100%;
+        height: auto;
+    }
+    .union-list {
+        margin: 0 1rem 0 1rem;
+        padding: 0 1rem 0 1rem;
+        border-radius: 20px;
+        border-style: dotted;
+    }
+    
+}
+
+
+@media (min-width: 63rem) {
+    #sec-community img{
+        max-width: 50%;
+        height: auto;
+    }
+    .padding-6rem{
+        padding: 0 6rem 0 6rem;
+    }
+    .union-list{
+        border-radius: 20px;
+        border-style: dotted;
+        padding: 1rem 2rem 1rem 2rem;
+        max-width: 70%;
+    }
+}
+
+.link-forening:hover {
+    text-decoration: underline;
+}
+
+
+
 /*natur section
 Brandon og Hans-Peder*/
 
 #sec-nature{
     text-align: center;
-    padding: 0 6rem 0 6rem;
 }
 
 #sec-nature h1{
@@ -601,13 +629,32 @@ Brandon og Hans-Peder*/
 
 /*Værd at vide om Verninge sektion
 Amanda*/
-.padding-6rem{
-    padding: 0 6rem 0 6rem;
-}
 
 #hjertestartere ul{
 padding: 2rem;
 font-family: 'kulim park';
 text-align: left;
 line-height: 1.5rem;
+}
+
+/*------------------------------Siden findes ikke 
+Malle-----------------------------*/
+
+.siden-findes-ikke{
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+}
+.siden-findes-ikke a{
+    color:#6B722F;
+}
+
+.siden-findes-ikke a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 63rem) {
+    .padding-1rem{
+        padding: 0 1rem 0 1rem;
+    }
 }
