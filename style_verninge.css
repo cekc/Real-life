@@ -565,6 +565,10 @@ Amanda, Brandon og Hans-Peder*/
 
 /*---------Malle-----*/
 
+.margin-top-bottom {
+    margin: 1.5rem 0 1.5rem 0;
+}
+
 @media (max-width: 63rem) {
     #sec-community img{
         max-width: 100%;
